@@ -19,7 +19,7 @@ object AkkaProducer extends App {
   implicit val actorMaterializer = ActorMaterializer()
 
   val bootstrapServers = "localhost:9092"
-  val kafkaTopic       = "text_topic"
+  val kafkaTopic       = "ehsan-topic"
   val partition        = 0
   val subscription     = Subscriptions.assignment(new TopicPartition(kafkaTopic, partition))
 
